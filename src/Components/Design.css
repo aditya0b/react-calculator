@@ -1,0 +1,269 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.Border {
+  position: absolute;
+  width: 600px;
+  height: 800px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background: #303030;
+  border: 3px solid #ffffff;
+  border-radius: 25px;
+}
+
+.content {
+  position: absolute;
+  width: 560px;
+  height: 760px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.headingframe {
+  position: absolute;
+  width: 560px;
+  height: 250px;
+  left: 0px;
+  top: 0px;
+  border-radius: 10px;
+}
+
+.Heading {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Ubuntu Mono";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 46px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #61dafb;
+}
+
+.downcontent {
+  position: absolute;
+  width: 560px;
+  height: 510px;
+  left: calc(50% - 560px / 2);
+  top: calc(50% - 510px / 2 + 125px);
+}
+
+.padding {
+  position: absolute;
+  width: 530px;
+  height: 480px;
+  left: calc(50% - 530px / 2);
+  top: calc(50% - 480px / 2);
+}
+
+.Value {
+  position: absolute;
+  width: 530px;
+  height: 80px;
+  left: 0px;
+  top: 10px;
+  border: 3px solid white;
+  border-radius: 10px;
+
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.Value2 {
+  position: absolute;
+  width: 530px;
+  height: 80px;
+  left: 0px;
+  top: 110px;
+  border: 3px solid white;
+  border-radius: 10px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.Value-in {
+  position: absolute;
+  width: 530px;
+  height: 80px;
+  background: transparent;
+  outline: none;
+  border: none;
+  box-sizing: border-box;
+  border-radius: 10px;
+  font-size: 30px;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: #ffffff;
+}
+
+::-webkit-input-placeholder {
+  color: #ffffff;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+#Buttons-D {
+  position: absolute;
+  width: 255px;
+  height: 60px;
+  left: 5px;
+  top: 210px;
+
+  background: #28a745;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+}
+
+#Buttons-M {
+  position: absolute;
+  width: 255px;
+  height: 60px;
+  left: 270px;
+  top: 210px;
+
+  background: #28a745;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+}
+
+#Buttons-A {
+  position: absolute;
+  width: 255px;
+  height: 60px;
+  left: 5px;
+  top: 290px;
+
+  background: #28a745;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+}
+
+#Buttons-S {
+  position: absolute;
+  width: 255px;
+  height: 60px;
+  left: 270px;
+  top: 290px;
+
+  background: #28a745;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+}
+
+.buttons {
+  position: absolute;
+
+  font-family: "Ubuntu Mono";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 29px;
+
+  color: #ffffff;
+}
+
+#resultdiv {
+  position: absolute;
+  width: 530px;
+  height: 80px;
+  left: 0px;
+  top: 370px;
+
+  border: 3px solid #ffffff;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+#result {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  font-family: "Ubuntu Mono";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 25px;
+  color: #ffffff;
+}
+
+@media (max-width : 768px){
+  .Border{
+    width: 500px;
+    height: 700px;
+  }
+
+
+  .content{
+    width: 460px;
+    height: 660px;
+  }
+
+  .headingframe{
+    width: 460px;
+    height: 150px;
+    border: 1px solid white;
+  }
+  
+  .Heading{
+    font-size: 35px;
+  }
+
+  .padding{
+    width: 430px;
+    height: 480px;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+
+  .Value{
+    width: 430px;
+    height: 60px;
+  }
+
+  .Value2{
+    width: 430px;
+    height: 60px;
+  }
+
+  .Value-in{
+    width: 430px;
+    height: 60px;
+    font-size: 20px;
+  }
+
+  #Buttons-D, #Buttons-M, #Buttons-A, #Buttons-S{
+    width: 160px;
+    height: 50px;
+    position: absolute;
+    text-align: center;
+  }
+
+  .buttons{
+    font-size: 20px;
+  }
+
+  #resultdiv{
+    width: 430px;
+    height: 60px;
+  }
+  #result{
+    font-size: 20px;
+  }
+
+
+}
